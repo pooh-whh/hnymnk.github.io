@@ -1,0 +1,979 @@
+/* -- HOMEPAGE -- */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+[class*="col-"] {
+    width: 100%;
+}
+/*-- Mobile first. SCREEN SIZE < 768PX --*/
+body {
+    background-color: #A95534;
+}
+
+main {
+    padding-top: 120px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 120px;
+ }
+
+header .header-brand {
+     font-family: 'Catamaran';
+     font-size: 20px;
+     font-weight: 900;
+     color: #111;
+     text-transform: uppercase;
+     display: block;
+     margin: 0 auto;
+     text-align: center;
+     padding: 25px 0;
+ }
+
+header nav ul {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+ }
+
+header nav ul li {
+    display:inline-block;
+    list-style-type: none;
+    padding: 0 16px;
+
+}
+
+header nav ul li a {
+    font-family: 'Catamaran';
+    font-size: 15px;
+    color: #A95534;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+header .header-developer {
+    display:none;
+}
+
+
+/*-- Desktop View. SCREEN SIZE  >=992PX --*/
+@media only screen and (min-width: 992px) {
+
+body {
+    background-color: #fff;
+}
+
+header .header-brand {
+    margin: 40px 0;
+    text-align: left;
+    line-height: 38px;
+    padding: 0px 20px 0px 40px;
+    border-right: 3px solid #111;
+    float: left;
+}
+
+header nav ul {
+    margin: 30px 0px 0px 30px;
+    float: left;
+ }
+
+header nav ul li a {
+    color: #111;
+    letter-spacing: 1px;
+    font-weight: 400;
+    line-height: 60px;
+    font-size: 19px;
+}
+
+header .header-developer {
+    display: block;
+    font-family: 'Catamaran';
+    font-size: 19px;
+    color: #111;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 38px;
+    border: 1px solid #111;
+    float: right;
+    margin-right: 40px;
+    padding: 0 20px;
+    margin-top: 40px;
+}
+
+}
+
+/*-- Mobile first. SCREEN SIZE < 768PX --*/
+/* INDEX */
+
+.index-banner {
+    width: 100%;
+    height: calc(100vh - 120px);
+    background-image: url('Images/index.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+
+.vertical-center {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.index-banner h2 {
+    font-family: 'Catamaran';
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px #111;
+    line-height: 80px;
+}
+
+.index-banner h1 {
+    font-family: 'Cormorant Garamond';
+    font-size: 28px;
+    color: #fff;
+    text-align: center;
+    font-weight: 200;
+    text-shadow: 2px 2px 8px #111;
+    font-style: italic;
+    line-height: 40px;
+}
+
+/*Box Links*/
+.index-links {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.index-links div {
+    margin: 30px 30px 0;
+    width: calc(100%-60px);
+    height: 100px;
+    background-color: #fff;
+}
+
+.index-links div h3 {
+    font-family: 'Catamaran';
+    font-size: 20px;
+    color: #111;
+    text-align: center;
+    font-weight: 600;
+    line-height: 100px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+/*-- Tablet View. 768PX <= SCREEN SIZE - <= 992PX-*/
+@media only screen and (min-width: 768px) {
+
+    body {
+        background-color: #fff;
+    }
+
+    .index-links div {
+        margin: 10px 25px 10px 25px;
+        background-color: #f2f2f2;
+    }
+
+}
+
+/*-- Desktop View. SCREEN SIZE  >=992PX --*/
+@media only screen and (min-width: 992px) {
+    .wrapper {
+        width: 992px;
+        margin: 0 auto;
+    }
+
+    .index-banner {
+        height: 450px;
+    }
+    .index-banner h1 {
+        display: block;
+        width: 750px;
+        margin: 0 auto;
+    }
+
+    .index-links {
+        overflow: hidden;
+        margin-left: 30px;
+    }
+
+    .index-links div {
+        margin: 10px 10px 10px 25px;
+        height: 230px;
+        background-color: #f2f2f2;
+        float: left;
+    }
+
+    .index-boxlink-square {
+        width: 22% !important;
+
+    }
+
+    .index-boxlink-rectangle {
+        width: 44% !important;
+    }
+    
+    .index-links div h3 {
+        line-height: 230px;
+    }
+}
+
+/*FOOTER*/
+/*-- Mobile first. SCREEN SIZE < 768PX --*/
+footer {
+    width: calc(100%-80px);
+    padding: 40px 40px;
+    margin-top: 20px;
+    background-color: #111;
+    overflow: hidden;
+}
+
+footer ul {
+    width: fit-content;
+    float: left;
+    padding-left: 20px;
+}
+
+footer ul li {
+    display: block;
+    list-style-type: none;
+}
+
+footer ul li a {
+    font-family: 'Catamaran';
+    font-size: 16px;
+    color: #fff;
+    line-height: 40px;
+}
+
+.footer-links-news {
+    display: none;
+    text-transform: uppercase;
+}
+
+.footer-sm {
+    width: 50px;
+    float:right;
+}
+
+.footer-sm  img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#footer-home {
+    text-transform: uppercase;
+}
+
+
+/*-- Tablet View. 768PX <= SCREEN SIZE - <= 992PX-*/
+@media only screen and (min-width: 768px) {
+    .footer-links-news {
+        display: block;
+    }
+
+    footer ul {
+        padding-right: 100px;
+    }
+
+    footer ul li p {
+        font-family: 'Catamaran';
+        font-size: 14px;
+        color: #A95534;
+        line-height: 40px;
+        text-transform: uppercase;
+    }
+
+}
+
+/*-- Desktop View. SCREEN SIZE  >=992PX --*/
+@media only screen and (min-width: 992px) {
+
+    .footer-links-news {
+        display: block;
+    }
+
+
+    footer ul {
+        padding-right: 180px;
+    }
+
+    footer ul li p {
+        font-family: 'Catamaran';
+        font-size: 16px;
+        color: #A95534;
+        line-height: 40px;
+        text-transform: uppercase;
+    }
+}
+
+/*DEVELOPER*/
+/*-- Desktop View. SCREEN SIZE  >=992PX --*/
+@media only screen and (min-width: 992px) {
+
+.developer-banner {
+    width: 100%;
+    height: 450px;
+    background-image: url('Images/me.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+
+.dv-vertical-center {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.developer-banner h1 {
+    padding-top: 100px;
+    font-family: 'Cormorant Garamond';
+    font-size: 50px;
+    color: #fff;
+    text-align: left;
+    font-weight: 400;
+    text-shadow: 3px 3px 8px #111;
+    font-style: italic;
+    line-height: 40px;
+    padding-left: 25px;
+}
+
+.developer-banner p {
+    font-family: 'Cormorant Garamond';
+    font-size: 30px;
+    color: #d1d0d3;
+    text-align: middle;
+    font-weight: 400;
+    text-shadow: 3px 3px 8px #111;
+    font-style: italic;
+    line-height: 40px;
+    padding-left: 100px;
+    padding-top: 10px;
+}
+    
+.developer-links {
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-top:-100px;
+}
+
+.developer-links  h2 {
+    font-family: 'Catamaran';
+    font-size: 20px;
+    color: #111;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+.developer-links  .developer-link {
+    float: left;
+    width: 228px;
+    height: 228px;
+    background-color: #e3e3e3;
+    margin: 20px 10px 20px;
+}
+
+.developer-links  .developer-link p {
+    font-family: 'Catamaran';
+    font-size: 24px;
+    color: #111;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-top: 45%;
+}
+
+.developer-contact {
+    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #e3e3e3;
+    width: 992px;
+    overflow: hidden;
+}
+
+.developer-contact  h2 {
+    font-family: 'Catamaran';
+    font-size: 20px;
+    color: #111;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.developer-contact  h1 {
+    font-family: 'Catamaran';
+    font-size: 16px;
+    color: #111;
+    font-weight: 200;
+    line-height: 40px;
+    text-align: center;
+}
+}
+
+/*-- Tablet View. 768PX <= SCREEN SIZE - <= 992PX-*/
+@media only screen and (max-width: 992px) {
+
+    .developer-banner {
+        width: 100%;
+        height: 450px;
+        background-image: url('Images/me.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: table;
+    }
+    
+    .dv-vertical-center {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    
+    .developer-banner h1 {
+        padding-top: 100px;
+        font-family: 'Cormorant Garamond';
+        font-size: 50px;
+        color: #fff;
+        text-align: left;
+        font-weight: 400;
+        text-shadow: 3px 3px 8px #111;
+        font-style: italic;
+        line-height: 40px;
+        padding-left: 25px;
+    }
+    
+    .developer-banner p {
+        font-family: 'Cormorant Garamond';
+        font-size: 30px;
+        color: #d1d0d3;
+        text-align: middle;
+        font-weight: 400;
+        text-shadow: 3px 3px 8px #111;
+        font-style: italic;
+        line-height: 40px;
+        padding-left: 100px;
+        padding-top: 10px;
+    }
+        
+    .developer-links {
+        margin-left: auto;
+        margin-right: auto;
+        width: 768px;
+        overflow: hidden;
+        margin-bottom: 40px;
+        margin-top: -80px;
+    }
+    
+    .developer-links  h2 {
+        font-family: 'Catamaran';
+        font-size: 20px;
+        color: #111;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    
+    
+    .developer-links  .developer-link {
+        float: left;
+        width: 172px;
+        height: 172px;
+        background-color: #e3e3e3;
+        margin: 20px 10px 30px;
+    }
+    
+    .developer-links  .developer-link p {
+        font-family: 'Catamaran';
+        font-size: 24px;
+        color: #111;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-align: center;
+        padding-top: 45%;
+    }
+    
+    .developer-contact {
+        margin-bottom: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #e3e3e3;
+        width: 768px;
+        overflow: hidden;
+    }
+    
+    .developer-contact  h2 {
+        font-family: 'Catamaran';
+        font-size: 20px;
+        color: #111;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        line-height: 40px;
+        text-align: center;
+    }
+    
+    .developer-contact  h1 {
+        font-family: 'Catamaran';
+        font-size: 16px;
+        color: #111;
+        font-weight: 200;
+        line-height: 40px;
+        text-align: center;
+    }
+
+}
+
+/*-- Mobile View. SCREEN SIZE < 768PX --*/
+@media only screen and (max-width: 768px) {
+
+    .developer-banner h1 {
+        font-size: 25px;
+        line-height: 20px;
+        padding-left: 5px;
+    }
+    
+    .developer-banner p {
+        font-size: 20px;
+        line-height: 20px;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+
+    .developer-links .wrapper{
+        display: block;
+    }
+
+    .developer-links {
+        width: 320px;
+        overflow: hidden;
+        margin-bottom: 20px;
+        margin-top: -100px;
+        display: block;
+    }
+
+    .developer-links  h2 {
+        font-family: 'Catamaran';
+        font-size: 15px;
+        color: #fff;
+    }
+    
+    
+    .developer-links  .developer-link {
+        float: left;
+        width: 140px;
+        height: 100px;
+        background-color: #e3e3e3;
+        margin: 10px 10px;
+    }
+    
+    .developer-links  .developer-link p {
+        font-family: 'Catamaran';
+        font-size: 14px;
+        color: #111;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-align: center;
+        padding-top: 30%;
+    }
+
+    .developer-contact {
+        margin-bottom: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #e3e3e3;
+        width: 320px;
+        overflow: hidden;
+    }
+    
+    .developer-contact  h2 {
+        font-size: 14px;
+        color: #111;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        line-height: 20px;
+        text-align: center;
+    }
+    
+    .developer-contact  h1 {
+        font-family: 'Catamaran';
+        font-size: 12px;
+        color: #111;
+        font-weight: 200;
+        line-height: 20px;
+        text-align: center;
+    }
+
+}
+
+/*CULTURE*/
+
+.culture-vid .wrapper h2 {
+    font-family: 'Catamaran';
+    font-size: 25px;
+    font-weight: 400;
+    color: #A95534;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.culture-vid video {
+    display: block;
+    margin: 0 auto;
+    padding:  0 30px;
+    overflow: hidden;
+}
+
+.culture-vid article h3 {
+    font-family: 'Catamaran';
+    font-size: 25px;
+    font-weight: 400;
+    color: #111;
+    padding-bottom: 20px;
+    padding-top: 40px;
+    padding-left: 10px;
+}
+
+.culture-vid article p {
+    width: 100%;
+    font-family: 'Catamaran';
+    font-size: 16px;
+    font-weight: 400;
+    color: #111;
+    line-height: 24px;
+    column-count: 3;
+    column-gap: 30px;
+    text-align: justify;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*-- Tablet View. 768PX <= SCREEN SIZE - <= 992PX-*/
+@media only screen and (max-width: 992px) {
+
+    .developer-contact {
+        margin-bottom: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #e3e3e3;
+        width: 768px;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+/*-- Mobile View. SCREEN SIZE < 768PX --*/
+@media only screen and (max-width: 768px) {
+
+    .developer-contact {
+        width: 100%;
+    }    
+}
+
+/*FOOD*/
+
+.food .wrapper h2 {
+    font-family: 'Catamaran';
+    font-size: 25px;
+    font-weight: 400;
+    color: #A95534;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.img-container {
+    width: 100%;
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template: "1fr 1fr 1fr 1fr 1fr" 33.33vh
+                   "1fr 1fr 1fr 1fr 1fr" 33.33vh
+                   "1fr 1fr 1fr 1fr 1fr" 33.33vh;
+    grid-gap: 5px;
+    margin-bottom: 30px;
+}
+
+.img-container .box {
+    position: relative;
+    background: #A95534;
+}
+
+.img-container .box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-container .box.a {
+    grid-row: span 2;
+}
+
+.img-container .box.b,
+.img-container .box.f,
+.img-container .box.h,
+.img-container .box.j {
+    grid-column: span 2;
+}
+
+/*-- Tablet View. 768PX <= SCREEN SIZE - <= 992PX-*/
+@media only screen and (max-width: 992px) {
+
+    .img-container {
+        grid-template: "1fr 1fr 1fr" 250px
+                       "1fr 1fr 1fr" 250px
+                       "1fr 1fr 1fr" 250px
+                       "1fr 1fr 1fr" 250px
+                       "1fr 1fr 1fr" 250px;
+    }
+
+}
+
+/*-- Mobile View. SCREEN SIZE < 768PX --*/
+@media only screen and (max-width: 768px) {
+
+    .img-container {
+        grid-template: "1fr 1fr" 200px
+                       "1fr 1fr" 200px
+                       "1fr 1fr" 200px
+                       "1fr 1fr" 200px
+                       "1fr 1fr" 200px
+                       "1fr 1fr" 200px
+                       "1fr 1fr" 200px;
+    }
+
+    .img-container .box.h {
+        grid-column: span 1;
+    }
+
+    .food .wrapper h2 {
+        font-size: 18px;
+        color: #fff;
+        margin-top: 30px;
+        letter-spacing: 3px;
+        font-weight: 500;
+    }
+
+}
+
+/*CONTACT - Su dung iframe*/
+
+.contact-page {
+    display: grid;
+    height: 100vh;
+    align-items: center;
+    background: #A95534;
+}
+
+.contact-in {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 0px 10px 0px #666;
+    margin-bottom: 10px;
+}
+
+.contact-map {
+    width: 100%;
+    height: auto;
+    flex: 50%;
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+
+.contact-form {
+    width: 100%;
+    height: auto;
+    flex: 50%;
+    padding: 20px;
+}
+
+.contact-form  h1 {
+    margin-bottom: 10px;
+    font-family: 'Catamaran';
+    font-size: 25px;
+    font-weight: 500;
+    color: #111;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+.contact-form-txt {
+    width: 100%;
+    height: 40px;
+    color: #111;
+    border: 1px solid #bcbcbc;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+    font-family: 'Catamaran';
+}
+
+.contact-form-txt::placeholder {
+    color: #aaa
+}
+
+.contact-form-textarea {
+    width: 100%;
+    height: 130px;
+    color: #111;
+    border: 1px solid #bcbcbc;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+    font-family: 'Catamaran';
+}
+
+.contact-form-textarea::placeholder {
+    color: #aaa
+}
+
+.contact-form-btn {
+    font-family: 'Catamaran';
+    text-transform: uppercase;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: #f2f2f2;
+    padding: 10px 0;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.contact-page .contact-hey h2 {
+    font-family: 'Catamaran';
+    font-size: 25px;
+    font-weight: 200;
+    color: #fff;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+/*DISCOVER*/
+
+.discover .discover-intro h2 {
+    font-family: 'Catamaran';
+    font-size: 25px;
+    font-weight: 200;
+    color: #111;
+    margin-top: 10px;
+    margin-left: 40px; 
+    letter-spacing: 1px;
+    line-height: 8px;
+}
+
+.discover .discover-intro h3 {
+    font-family: 'Catamaran';
+    font-size: 15px;
+    font-weight: 200;
+    color: #111;
+    margin-top: 10px;
+    margin-left: 40px; 
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.virtual-tour {
+    margin-bottom: 20px;
+}
+
+blink {
+    -webkit-animation: 2s linear infinite condemned_blink_effect; /* for Safari 4.0 - 8.0 */
+    animation: 2s linear infinite condemned_blink_effect;
+  }
+
+  @-webkit-keyframes condemned_blink_effect { 
+    0% {
+      visibility: hidden;
+    }
+    50% {
+      visibility: hidden;
+    }
+    100% {
+      visibility: visible;
+    }
+  }
+  
+  @keyframes condemned_blink_effect {
+    0% {
+      visibility: hidden;
+    }
+    50% {
+      visibility: hidden;
+    }
+    100% {
+      visibility: visible;
+    }
+  }
+
+  /*-- Tablet View. 768PX <= SCREEN SIZE - <= 992PX-*/
+@media only screen and (max-width: 992px) {
+
+    .discover .discover-intro h2 {
+        text-align: center;
+    }
+    
+    .discover .discover-intro h3 {
+        text-align: center;
+    }
+
+}
+
+  /*-- Mobile View. SCREEN SIZE < 768PX --*/
+@media only screen and (max-width: 768px) {
+
+    .discover .discover-intro h2 {
+        display: none;
+    }
+    
+    .discover .discover-intro h3 {
+        display: none;
+    }
+
+}
+
+
+
+
+
